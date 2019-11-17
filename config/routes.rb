@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root "grams#index"
   resources :grams do
     resources :comments, only: :create
+    resources :photos, only: :create
   end
 end

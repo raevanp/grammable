@@ -1,1 +1,6 @@
 <%= @gram.inspect %>
+
+<%= simple_form_for @photo, url: '#' do |f| %>
+  <%= f.input :picture %>
+  <%= f.submit %>
+<% end %>
